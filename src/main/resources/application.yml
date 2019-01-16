@@ -1,0 +1,21 @@
+spring:
+  profiles: default
+  application:
+    name: prueba-backend
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: userprueba
+    password: 1234
+  mail:
+    host: smtp.gmail.com
+    port: 587 
+    username: honorarios.medicos@auna-digital.pe
+    password: Auna2018$$
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
